@@ -1,0 +1,4 @@
+webStoreApp/__pycache__
+webStorePlan/__pycache__
+webStoreApp/migrations
+secret_settings.py
