@@ -5,10 +5,10 @@ def home(request):
     return render(request,'webStoreApp/home.html')
 
 def services(request):
-    return HttpResponse("Services")
+    return render(request,'webStoreApp/services.html')
 
 def store(request):
-    return HttpResponse("Store")
+    return render(request,'webStoreApp/store.html')
 
 def contact(request):
-    return HttpResponse("Contact")
+    return render(request,'webStoreApp/contact.html')
