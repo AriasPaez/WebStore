@@ -4,9 +4,6 @@ from django.shortcuts import render, HttpResponse
 def home(request):
     return render(request,'webStoreApp/home.html')
 
-def services(request):
-    return render(request,'webStoreApp/services.html')
-
 def store(request):
     return render(request,'webStoreApp/store.html')
 
