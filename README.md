@@ -1,5 +1,5 @@
 # WebStore
-Web store develoment in Django framework and MongoDB
+Web store develoment in Django framework and MariaDB
 
 ## How to install:
 ```
