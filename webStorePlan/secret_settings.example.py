@@ -1,0 +1,11 @@
+SECRET_KEY = ''
+# CONFIG BD
+DB_NAME = ''
+DB_USERNAME = ''
+DB_PASSWORD = ''
+HOST = ''
+PORT = ''
+
+# CONFIG MEDIA
+MEDIA_URL = ''
+MEDIA_ROOT = ''
