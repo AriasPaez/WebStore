@@ -30,6 +30,9 @@ jobs:
             - 3306:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
+    - name: Django Secret Key
+      env:
+        SECRET_KEY: ${{secrets.SECRET_KEY}}
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
