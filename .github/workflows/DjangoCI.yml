@@ -51,6 +51,8 @@ jobs:
         SECRET_KEY: ${{secrets.SECRET_KEY}}
       run: |
         pwd
+        cd webStorePlan
+        pwd
         echo "SECRET_KEY=$SUPER_SECRET" > .env
     - name: Run tests
       run: |
