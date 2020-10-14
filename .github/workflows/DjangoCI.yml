@@ -51,9 +51,7 @@ jobs:
         SECRET_KEY: ${{secrets.SECRET_KEY}}
       run: |
         pwd
-        la
         echo "SECRET_KEY=$SUPER_SECRET" > .env
-        la        
     - name: Run tests
       run: |
         ls
