@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-10.4
+    runs-on: ubuntu-10.04
     strategy:
       max-parallel: 4
       matrix:
