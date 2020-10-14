@@ -36,7 +36,9 @@ jobs:
       run: |
         mkdir webStorePlan
         cd webStorePlan
+        ls -l
         echo "SECRET_KEY=$SUPER_SECRET" > .env
+        ls -l
         cat .env
         pwd
     - uses: actions/checkout@v2
