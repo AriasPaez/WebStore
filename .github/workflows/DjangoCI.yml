@@ -56,6 +56,4 @@ jobs:
         echo "SECRET_KEY=$SECRET_KEY" > .env
     - name: Run tests
       run: |
-        ls
-        ecjp
         python manage.py test
