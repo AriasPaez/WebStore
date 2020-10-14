@@ -36,6 +36,7 @@ jobs:
       run: |
         echo "SECRET_KEY=$SUPER_SECRET" > .env
         cat .env
+        pwd
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
