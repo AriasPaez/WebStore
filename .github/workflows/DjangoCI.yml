@@ -34,7 +34,7 @@ jobs:
       env:
         SECRET_KEY: ${{secrets.SECRET_KEY}}
       run: |
-        example-command "$SUPER_SECRET"
+        $SUPER_SECRET
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
