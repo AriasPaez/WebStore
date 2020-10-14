@@ -46,6 +46,24 @@ jobs:
         while ! mysqladmin ping -h"127.0.0.1" -P"$PORT" --silent; do
           sleep 1
         done
+    - name: ENVIRONMENT VARIABLES
+      env:
+        SECRET_KEY: ${{secrets.SECRET_KEY}}
+        DB_NAME: ${{secrets.DB_NAME}}
+        DB_USERNAME: ${{secrets.DB_USERNAME}}
+        DB_PASSWORD: ${{secrets.DB_PASSWORD}}
+        HOST: ${{secrets.HOST}}
+        PORT: ${{secrets.PORT}}
+      run: |
+        pwd
+        cd webStorePlan
+        pwd
+        echo "SECRET_KEY=$SECRET_KEY" > .env
+        echo "DB_NAME=$DB_NAME" >> .env
+        echo "DB_USERNAME=$DB_USERNAME" >> .env
+        echo "DB_PASSWORD=$DB_PASSWORD" >> .env
+        echo "HOST=$HOST" >> .env
+        echo "PORT=$PORT" >> .env
     - name: Run tests
       run: |
         python manage.py test
