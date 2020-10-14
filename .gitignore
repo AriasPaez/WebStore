@@ -1,5 +1,4 @@
-webStoreApp/__pycache__
-webStorePlan/__pycache__
-webStoreApp/migrations
+__pycache__
+migrations
 .env
 media
