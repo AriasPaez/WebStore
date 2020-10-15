@@ -3,7 +3,8 @@ from django.db import models
 # Create your models here.
 class Service(models.Model):
     name=models.CharField(max_length=50,null=False)
-    description=models.CharField(max_length=200,null=True,blank=True)
+    description=models.CharField(max_length=500,null=True,blank=True)
+    image = models.ImageField(upload_to='store',default='../static/services/service_default.png', verbose_name='imagen')
     data_creation=models.DateTimeField(auto_now_add=True)
     data_update=models.DateTimeField(auto_now=True)
 

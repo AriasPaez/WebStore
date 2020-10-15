@@ -5,11 +5,11 @@ Servicios
 {% endblock %}
 
 {% block content %}
-    {% if services %}
-        {% for service in services %}
+    {% for service in services %}
         {{service.name}}
         {{service.description}}
         <img src="{{service.image.url}}" alt="">
-        {% endfor %}
-    {% endif %}
+    {% empty %}
+    Vacio
+    {% endfor %}
 {% endblock %}
